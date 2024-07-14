@@ -1,0 +1,8 @@
+1. IAM
+2. DynamoDB
+3. S3
+4. RDS
+5. EC2
+6. NodeJS, Elastic Beanstalk, code pipeline, Route53
+7. Lambda functions
+8. SES

@@ -1,0 +1,23 @@
+{
+  "name": "aws_nodejs",
+  "version": "1.0.0",
+  "description": "NodeJS with AWS Services",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ravi-ka/AWS_NodeJS.git"
+  },
+  "author": "Ravisankar ka (ka.ravisankar@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ravi-ka/AWS_NodeJS/issues"
+  },
+  "homepage": "https://github.com/Ravi-ka/AWS_NodeJS#readme",
+  "dependencies": {
+    "@aws-sdk/client-iam": "^3.614.0"
+  }
+}
