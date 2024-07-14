@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Ravi-ka/AWS_NodeJS#readme",
   "dependencies": {
-    "@aws-sdk/client-iam": "^3.614.0"
+    "@aws-sdk/client-iam": "^3.614.0",
+    "aws-sdk": "^2.1659.0"
   }
 }

@@ -4,7 +4,7 @@ import {
   CreateUserCommand,
 } from "@aws-sdk/client-iam";
 
-const iamClient = new IAMClient({ region: "ap-south-1" });
+const iamClient = new IAMClient();
 
 const params = {
   UserName: "AdminUser",
