@@ -7,22 +7,23 @@ import {
 const iamClient = new IAMClient();
 
 const params = {
-  UserName: "AdminUser",
+  UserName: "Admin-User",
 };
 
-const run = async () => {
+const executeFunction = async () => {
   try {
-    const checkUser = await iamClient.send(new GetUserCommand(params));
-    if (checkUser) {
-      return console.log("User Already Exists");
-    } else {
-      const addUser = await iamClient.send(new CreateUserCommand(params));
-      console.log("User Created");
-      return addUser;
-    }
+    const data = await iamClient.send(new GetUserCommand(params));
+    console.log("User already exists: " + data);
+    return data;
   } catch (error) {
-    console.log("Error while creating IAM", error);
+    try {
+      const result = await iamClient.send(new CreateUserCommand(params));
+      console.log("User created successfully");
+      return result;
+    } catch (error) {
+      console.log("Error while creating a user : " + error);
+    }
   }
 };
 
-run();
+executeFunction();
