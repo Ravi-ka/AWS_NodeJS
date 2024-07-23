@@ -1,0 +1,10 @@
+- Delegation of Permissions 
+- Temporary Security Credentials 
+- Cross-Account Access 
+- Federated Access 
+- Service Roles 
+- Fine-Grained Permissions 
+- Trust Policies 
+- Role Chaining 
+- Instance Profiles 
+- Temporary Security Token Service Enhanced Security
