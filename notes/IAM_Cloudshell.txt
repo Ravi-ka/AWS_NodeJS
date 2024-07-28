@@ -1,0 +1,29 @@
+*****************
+Cheatsheet: https://www.bluematador.com/learn/aws-cli-cheatsheet
+*****************
+
+-##- Listing users
+
+[cloudshell-user@ip-10-134-59-160 ~]$ aws iam list-users
+-------------------------
+
+-##- Create user
+
+[cloudshell-user@ip-10-134-59-160 ~]$ aws iam create-user --user-name user1
+
+*User1 is the user name*
+----------------------------
+
+-##- Create a skeleton for login 
+
+[cloudshell-user@ip-10-134-59-160 ~]$ aws iam create-login-profile --generate-cli-skeleton > create-login-profile.json
+
+*Download the file*
+*Edit with required details*
+*Delete the old file*
+*Reupload the file and execute the below command*
+
+[cloudshell-user@ip-10-134-59-160 ~]$ aws iam create-login-profile --cli-input-json file://create-login-profile.json
+
+--------------------------
+-##- 
