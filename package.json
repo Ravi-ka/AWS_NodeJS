@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Ravi-ka/AWS_NodeJS#readme",
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.620.0",
+    "@aws-sdk/client-ec2": "^3.620.0",
     "@aws-sdk/client-iam": "^3.614.0",
     "aws-sdk": "^2.1659.0"
   }
