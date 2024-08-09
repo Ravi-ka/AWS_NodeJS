@@ -7,6 +7,7 @@ const ddbClient = new DynamoDBClient();
 const params = {
   RequestItems: {
     "Employee-prod": [
+      //Each PutRequest should be a separate object in the array under the RequestItems key.
       {
         PutRequest: {
           Item: {
